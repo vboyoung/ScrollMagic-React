@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 // Importing Sass with Bootstrap CSS
 import './css/scss/App.scss';
+import './css/scss/Scrollup.scss';
 import './css/index.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
