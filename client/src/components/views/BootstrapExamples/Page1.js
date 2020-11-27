@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap';
 import {Alert} from 'react-bootstrap';
 
 
-const Layout = () => (
+const Page1 = () => (
   <Container className="p-3">
     <Jumbotron className="pb-1">
       <h1 className="header">Welcome To React-Bootstrap</h1>
@@ -26,7 +26,7 @@ const Layout = () => (
     </Jumbotron>
   </Container>
 );
-export default Layout;
+export default Page1;
 
 
 function AlertDismissibleExample() {

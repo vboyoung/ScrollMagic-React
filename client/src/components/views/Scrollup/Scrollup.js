@@ -9,8 +9,17 @@ const ScrollUpStyled = styled.div`
   padding: 3em;
   background-color: #f1f1f1;
   
-  & h1 {
+  h1 {
     text-align:center;
+  }
+  .bigtext {    
+    font-size: 18em;
+    transform: translateY(88.5625px) scale(7.8625);
+    
+     .smalltext {
+       font-size: 0.5em;
+     }
+  
   }
 }
 
@@ -20,14 +29,14 @@ const ScrollUpStyled = styled.div`
   position: relative;
   box-sizing: border-box;
   
-  & blockquote {
+  blockquote {
     font-size: 2.3em;
     width: 30%;
     margin-top: 17%;
     position: absolute;
   }
 
-  & span.redline {
+  span.redline {
     transition: width 0.3s ease-out;
     width: 10%;
     background: red;
@@ -41,7 +50,7 @@ const ScrollUpStyled = styled.div`
 
   }
   
-  & .tween {
+  .tween {
     margin-top: 5%;
 	  width: 350px;
     height: 230px;
@@ -52,7 +61,7 @@ const ScrollUpStyled = styled.div`
     opacity:1;
   }
   
-  & .box {
+  .box {
     width: 100px;
     height: 100px;
     border: 5px solid lightgray;
@@ -60,19 +69,40 @@ const ScrollUpStyled = styled.div`
     left: 50%;
   }
 }
-
-
-
-
 `;
 
 
 
 const Scrollup = () => (
   <ScrollUpStyled>
+
+
       <div className="section">
-          <h1>Start</h1>
+      
+        <Controller>
+          <Scene
+            triggerElement="#start"
+            duration={300}
+            indicators={true}
+          >
+          {(progress) => (
+            <Tween
+              to={{
+                transform: 'translateY(0px) scale(1)'
+              }}      
+              ease="Strong.easeOut" 
+              totalProgress={progress}
+              paused
+            > 
+              <h1 className="bigtext">React</h1>
+            </Tween> 
+              )}   
+          </Scene>
+        </Controller> 
+        <div id="start" />
       </div>
+        
+
       <div className="section">
           <h1>Scroll down GOOD</h1>
       </div>
@@ -93,7 +123,7 @@ const Scrollup = () => (
           <Controller>  
             <Scene
               triggerElement="#trigger"
-              duration={300}
+              duration={400}
             >
             {(progress) => (
               <Tween

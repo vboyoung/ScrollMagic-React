@@ -6,8 +6,10 @@ import {
   Link
 } from "react-router-dom";
 
-import Layout from './views/Layout/Layout';
 import LoginPage from './views/LoginPage/LoginPage';
+import Aos from './views/AosExamples/Aos1';
+import Auri from './views/AosExamples/Auri';
+import Bootstrap from './views/BootstrapExamples/Page1';
 import Scrollup from './views/Scrollup/Scrollup';
 import ClassToggle from './views/ScrollMagicExamples/ClassToggle/ClassToggle';
 import List from './views/ScrollMagicExamples/List/List';
@@ -22,9 +24,17 @@ import Tween from './views/ScrollMagicExamples/Tween/Tween';
 const App = () => (
   <Router>
     <Switch>
-      <Route exact path="/" component={Layout} />
+
+
       <Route exact path="/login" component={LoginPage} />     
+
+      <Route exact path="/Aos/page1" component={Aos} /> 
+      <Route exact path="/Aos/page2" component={Auri} /> 
+
+      <Route exact path="/Bootstrap/page1" component={Bootstrap} /> 
+
       <Route exact path="/Scrollup" component={Scrollup} /> 
+
       <Route exact path="/ClassToggle" component={ClassToggle} /> 
       <Route exact path="/List" component={List} /> 
       <Route exact path="/SplitText" component={SplitText} /> 
