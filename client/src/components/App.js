@@ -28,11 +28,14 @@ const App = () => (
 
       <Route exact path="/login" component={LoginPage} />     
 
+      {/* aos 적용 */}
       <Route exact path="/Aos/page1" component={Aos} /> 
       <Route exact path="/Aos/page2" component={Auri} /> 
 
+      {/* Bootstrap 적용 */}
       <Route exact path="/Bootstrap/page1" component={Bootstrap} /> 
 
+      {/* scroll 적용  */}
       <Route exact path="/Scrollup" component={Scrollup} /> 
 
       <Route exact path="/ClassToggle" component={ClassToggle} /> 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import '../../../css/scss/App.scss';
-import './aos.css';
+import './css/aos/aos.css';
 
 import AOS from 'aos';
 import Image from 'react-bootstrap/Image'

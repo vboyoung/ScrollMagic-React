@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import "default";
+@import "layout";
+@import "layoutmedia";
+@import "_mixin";
+
+
+
+// gnb
+
+
+
+// section
+.section {
+    clear: both; 
+    position: relative; 
+    text-align: center;
+
+    .layout{
+        width: 140rem; 
+        margin: 0 auto; 
+        padding:0;
+        overflow: hidden;
+        text-align: left;
+    }  
+}
+
+// section1
+.section1 {
+    .layout{ padding: 10.7rem 0 12rem; }
+
+    .article_tit{ 
+        display: block; 
+        font-size: 2.5rem; 
+        font-weight: 600; 
+        line-height: 3.2rem;
+        letter-spacing: -0.15rem;
+        margin-bottom: 1.5rem;
+        color: #5F5F5F; 
+    }
+}
+
+// section2
+.section2 {
+    .bg_txt {
+        position: absolute; 
+        z-index: 1; 
+        top: 6rem; 
+        left: -5.3rem;
+
+        @include sm-desktop {    
+            left: -5.3rem; width: 17.6rem; height:24.7rem;  background-size: contain;
+         }
+    }
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 50%;
+        margin-left: -85.6rem;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 28.2rem;
+        background-color: #E30A17;
+        
+        @include sm-desktop {
+            left: auto; right: 0; margin-left: 0; width: calc( 100% - 104px ); 
+        }
+    }
+
+    #highlight {
+        position: relative; 
+        padding-left: 46.4rem;
+        padding-bottom: 7.5rem;
+        
+        .article_tit { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            font-size: 5.5rem; 
+            font-weight: 900; 
+            font-family: 'mtsr'; 
+            color: #4B4B4B; 
+            text-align: left; 
+            line-height: 6rem;
+
+            b {
+                display: block; 
+                width: 13.3rem; 
+                height: 8.1rem; 
+                background-size: cover;
+                font-size: 0;
+                text-indent: -9999px;
+            }
+        }
+
+        ul {
+            margin-bottom: 7.4rem;
+
+            li {
+                float: left; 
+                width: 29.2rem; 
+                height: 36rem; 
+                margin-left: 3rem;
+                box-shadow: 0px 6px 6px #00000029;
+                background-color: #efeff1;
+           
+                &:first-child {margin-left: 0;}
+
+                .img_wrap {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }   
+                
+                a {display: block;}
+
+                .more {
+                    position: absolute; 
+                    bottom: 14.7rem; 
+                    left: 0; 
+                    width: 6.6rem; 
+                    height: 6rem;
+                    background-size: contain;
+
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        left: 9rem; 
+                        content: "";
+                        display: inline-block; 
+                        width: 13.5rem;
+                        height: 1px;
+                        background-color: rgba(255,255,255,0.3); 
+                    }
+                }
+                .highlight_tit {
+                    display: block;
+                    text-align: center;
+                    margin-top: 2.4rem;
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                    color: #fff;
+                    line-height: 3.4rem;
+                    letter-spacing: -0.04rem;
+                }
+             }   
+        }
+    }
+}
+
+
+
+.bg_txt {
+   .txt_a {stroke-width: 1.5px; fill: transparent; stroke: transparent;}
+   .txt_u {stroke-width: 1.5px; fill: transparent; stroke: transparent;}
+   .txt_r {stroke-width: 1.5px; fill: transparent; stroke: transparent;}
+   .txt_i {stroke-width: 1.5px; fill: transparent; stroke: transparent;}
+   .txt_a {stroke-dasharray: 1300; stroke-dashoffset: 1300; -webkit-animation: ani_a 2s alternate forwards; animation: ani_a 2s alternate forwards; stroke-width: 1.5px; fill: transparent; stroke: #e30a17;}
+}
+
+.bg_txt.on {
+    .txt_a {stroke-dasharray: 1300; stroke-dashoffset: 1300; -webkit-animation: ani_a 2s alternate forwards; animation: ani_a 2s alternate forwards; stroke-width: 1.5px; fill: transparent; stroke: #e30a17;}
+}

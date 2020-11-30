@@ -1,0 +1,24 @@
+@mixin lg-desktop {
+    @media (min-width: 1920px) { @content; }
+}
+
+// 1700px ~ 1281px
+@mixin md-desktop {
+    @media (max-width: 1700px) and (min-width: 1281px) { @content; }
+}
+
+// 1280px ~ 1000px
+@mixin sm-desktop {
+    @media (max-width: 1280px) and (min-width: 1000px) { @content; }
+}
+
+// 999px ~ 768px
+@mixin tablet {
+    @media (max-width: 999px) and (min-width: 768px){ @content; }
+}
+
+// 767px ~ 320px
+@mixin phone-only {
+    @media (max-width: 767px) and (min-width: 320px){ @content; }
+}
+

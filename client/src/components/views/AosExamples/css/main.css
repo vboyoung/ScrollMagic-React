@@ -62,6 +62,8 @@
 
 .section{ clear: both; position: relative; text-align: center; }
 .section .layout{ width: 140rem; margin: 0 auto; overflow: hidden; text-align: left; }
+
+
 .section1 .layout{ padding: 10.7rem 0 12rem; }
 .section1 .article_tit{ display: block; font-size: 2.5rem; font-weight: 600; line-height: 3.2rem; letter-spacing: -0.15rem; margin-bottom: 1.5rem; color: #5F5F5F; }
 #news{ position: relative; float: left; width: 94rem; overflow: hidden; }
@@ -203,6 +205,8 @@
 .section2 .bg_txt{ position: absolute; z-index: 1; top: 6rem; left: -5.3rem; }
 .section4 .bg_txt{ position: absolute; z-index: 1; top: 16rem; left: 8rem; }
 .section5 .bg_txt{ position: absolute; z-index: 1; bottom: 13.5rem; left: 50%; margin-left: 65.5rem; }
+
+
 .bg_txt .txt_a { stroke-width: 1.5px; fill: transparent; stroke: transparent; }
 .bg_txt .txt_u { stroke-width: 1.5px; fill: transparent; stroke: transparent; }
 .bg_txt .txt_r { stroke-width: 1.5px; fill: transparent; stroke: transparent; }
