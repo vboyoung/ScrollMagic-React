@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './css/aos/aos.css';
 import './scss/main.scss';
 
+import './js/main.js';
+
 import AOS from 'aos';
 import Image from 'react-bootstrap/Image'
 import 'holderjs';
@@ -19,6 +21,18 @@ const Auri = () => (
   {/* wrap start	 */}
   <div id="wrap">
     <div id="contents">
+
+
+
+	<div id="quick">
+		<a href="" className="control open"><span>QUICK LINK</span></a>
+	
+		<a href="" className="control close">
+			<i className="xi-angle-right"></i><span className="hidden">퀵메뉴 닫기</span>
+		</a>
+	</div>
+
+
 
 	{/* setion2 */}
     <div className="section section2" data-aos="fade-left" data-aos-delay="200">

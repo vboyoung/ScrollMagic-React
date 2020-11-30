@@ -7,6 +7,63 @@
 
 
 
+// quick
+
+#quick {
+  
+    position: fixed;
+    right: -34rem;
+    top: 0;
+    z-index: 500;
+    height: 100%;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+
+    &.hide {
+        .control{ right: -6rem; }
+    }
+
+    .control {
+        transition: all .4s; 
+        -webkit-transition: all .4s; 
+    } 
+
+    .open {
+        position: fixed;
+        top: 16.2rem;
+        right: 0; 
+        z-index: -1; 
+        width: 6rem;
+
+        &:after {
+            display: block;position: relative; width: 6rem; height: 6.2rem;  background-size: cover; content: '검색'; font-size: 0;
+        }
+
+        span {
+            display: block; width: 6rem; height: 18rem; font-size: 0; text-indent: -9999px;  background-size: cover;
+        }
+    }
+    .close  {
+        position: absolute;
+        top: 10.8rem;
+        left: -6rem;
+        width: 6rem;
+        height: 6rem;
+        background-color: #DC000C;
+        color: #fff;
+        text-align: center;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+
+        i {font-size: 2rem; line-height: 6rem; }
+    } 
+}
+
+
+
+
+
+
 // gnb
 
 
@@ -49,7 +106,7 @@
         top: 6rem; 
         left: -5.3rem;
 
-        @include sm-desktop {    
+        @include md-desktop {    
             left: -5.3rem; width: 17.6rem; height:24.7rem;  background-size: contain;
          }
     }
